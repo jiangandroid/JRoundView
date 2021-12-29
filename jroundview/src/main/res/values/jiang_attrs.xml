@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <attr name="JrvStyle" format="reference" />
+
+    <!-- RoundWidget start -->
+    <declare-styleable name="JrvTextView">
+        <!--背景色-->
+        <attr name="jrv_backgroundColor" format="color|reference" />
+        <!--边框的宽度，配合 jrv_borderColor 使用-->
+        <attr name="jrv_borderColor" format="color|reference" />
+        <!--边框的颜色，配合 jrv_borderWidth 使用-->
+        <attr name="jrv_borderWidth" format="dimension|reference" />
+        <!--设置圆角大小是否自动适应为 View 的高度的一半-->
+        <attr name="jrv_isRadiusAdjustBounds" format="boolean" />
+        <!--圆角大小，类似shape-->
+        <attr name="jrv_radius" format="dimension|reference" />
+        <!--左上圆角大小，类似shape-->
+        <attr name="jrv_radiusTopLeft" format="dimension|reference" />
+        <!--右上圆角大小，类似shape-->
+        <attr name="jrv_radiusTopRight" format="dimension|reference" />
+        <!--左下圆角大小，类似shape-->
+        <attr name="jrv_radiusBottomLeft" format="dimension|reference" />
+        <!--右下圆角大小，类似shape-->
+        <attr name="jrv_radiusBottomRight" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="JrvFrameLayout">
+        <attr name="jrv_backgroundColor" />
+        <attr name="jrv_borderColor" />
+        <attr name="jrv_borderWidth" />
+        <attr name="jrv_isRadiusAdjustBounds" />
+        <attr name="jrv_radius" />
+        <attr name="jrv_radiusTopLeft" />
+        <attr name="jrv_radiusTopRight" />
+        <attr name="jrv_radiusBottomLeft" />
+        <attr name="jrv_radiusBottomRight" />
+    </declare-styleable>
+
+    <declare-styleable name="JrvLinearLayout">
+        <attr name="jrv_backgroundColor" />
+        <attr name="jrv_borderColor" />
+        <attr name="jrv_borderWidth" />
+        <attr name="jrv_isRadiusAdjustBounds" />
+        <attr name="jrv_radius" />
+        <attr name="jrv_radiusTopLeft" />
+        <attr name="jrv_radiusTopRight" />
+        <attr name="jrv_radiusBottomLeft" />
+        <attr name="jrv_radiusBottomRight" />
+    </declare-styleable>
+
+    <declare-styleable name="JrvRelativeLayout">
+        <attr name="jrv_backgroundColor" />
+        <attr name="jrv_borderColor" />
+        <attr name="jrv_borderWidth" />
+        <attr name="jrv_isRadiusAdjustBounds" />
+        <attr name="jrv_radius" />
+        <attr name="jrv_radiusTopLeft" />
+        <attr name="jrv_radiusTopRight" />
+        <attr name="jrv_radiusBottomLeft" />
+        <attr name="jrv_radiusBottomRight" />
+    </declare-styleable>
+
+    <declare-styleable name="JrvConstraintLayout">
+        <attr name="jrv_backgroundColor" />
+        <attr name="jrv_borderColor" />
+        <attr name="jrv_borderWidth" />
+        <attr name="jrv_isRadiusAdjustBounds" />
+        <attr name="jrv_radius" />
+        <attr name="jrv_radiusTopLeft" />
+        <attr name="jrv_radiusTopRight" />
+        <attr name="jrv_radiusBottomLeft" />
+        <attr name="jrv_radiusBottomRight" />
+    </declare-styleable>
+    <!-- RoundWidget end -->
+</resources>
