@@ -1,0 +1,112 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AliArrayNamingShouldHaveBracket" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AliEqualsAvoidNull" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAbstractClassShouldStartWithAbstractNaming" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAvoidCallStaticSimpleDateFormat" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAvoidCommentBehindStatement" enabled="false" level="MAJOR" enabled_by_default="false" />
+    <inspection_tool class="AlibabaAvoidComplexCondition" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAvoidConcurrentCompetitionRandom" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAvoidDoubleOrFloatEqualCompare" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAvoidManuallyCreateThread" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAvoidMissUseOfMathRandom" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAvoidNegationOperator" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAvoidReturnInFinally" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaAvoidStartWithDollarAndUnderLineNaming" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaBigDecimalAvoidDoubleConstructor" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaBooleanPropertyShouldNotStartWithIs" enabled="false" level="CRITICAL" enabled_by_default="false" />
+    <inspection_tool class="AlibabaClassCastExceptionWithSubListToArrayList" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaClassCastExceptionWithToArray" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaClassMustHaveAuthor" enabled="false" level="MAJOR" enabled_by_default="false" />
+    <inspection_tool class="AlibabaClassNamingShouldBeCamel" enabled="false" level="MAJOR" enabled_by_default="false" />
+    <inspection_tool class="AlibabaCollectionInitShouldAssignCapacity" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AlibabaCommentsMustBeJavadocFormat" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AlibabaConcurrentExceptionWithModifyOriginSubList" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaConstantFieldShouldBeUpperCase" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaCountDownShouldInFinally" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaEnumConstantsMustHaveComment" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaExceptionClassShouldEndWithException" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaIbatisMethodQueryForList" enabled="false" level="MAJOR" enabled_by_default="false" />
+    <inspection_tool class="AlibabaLowerCamelCaseVariableNaming" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaMethodReturnWrapperType" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaMethodTooLong" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AlibabaPackageNaming" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaPojoMustOverrideToString" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaPojoMustUsePrimitiveField" enabled="false" level="MAJOR" enabled_by_default="false" />
+    <inspection_tool class="AlibabaPojoNoDefaultValue" enabled="false" level="MAJOR" enabled_by_default="false" />
+    <inspection_tool class="AlibabaRemoveCommentedCode" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaServiceOrDaoClassShouldEndWithImpl" enabled="false" level="CRITICAL" enabled_by_default="false" />
+    <inspection_tool class="AlibabaStringConcat" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaSwitchStatement" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaTestClassShouldEndWithTestNaming" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaThreadLocalShouldRemove" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaThreadShouldSetName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaTransactionMustHaveRollback" enabled="false" level="MAJOR" enabled_by_default="false" />
+    <inspection_tool class="AlibabaUndefineMagicConstant" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AlibabaUnsupportedExceptionWithModifyAsList" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AlibabaUseQuietReferenceNotation" enabled="false" level="MAJOR" enabled_by_default="false" />
+    <inspection_tool class="AlibabaUseRightCaseForDateFormat" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintClickableViewAccessibility" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="CanSealedSubClassBeObject" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="ConflictingExtensionProperty" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="ControlFlowWithEmptyBody" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="ConvertNaNEquality" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="DataClassPrivateConstructor" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="DelegationToVarProperty" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="DestructuringWrongName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="EmptyRange" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="ForEachParameterNotUsed" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ImplicitNullableNothingType" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="KDocUnresolvedReference" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="KotlinCovariantEquals" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="KotlinEqualsBetweenInconvertibleTypes" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="KotlinThrowableNotThrown" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="LateinitVarOverridesLateinitVar" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="LeakingThis" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="MapOrSetKeyShouldOverrideHashCodeEquals" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="MemberVisibilityCanBePrivate" enabled="false" level="INFO" enabled_by_default="false" />
+    <inspection_tool class="MethodRefCanBeReplacedWithLambda" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="MoveSuspiciousCallableReferenceIntoParentheses" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="NonAsciiCharacters" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ObjectPropertyName" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="RecursiveEqualsCall" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="RecursivePropertyAccessor" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="Reformat" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="RegExpDuplicateAlternationBranch" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpDuplicateCharacterInClass" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpEmptyAlternationBranch" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpEscapedMetaCharacter" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="RegExpOctalEscape" enabled="false" level="INFORMATION" enabled_by_default="false" />
+    <inspection_tool class="RegExpRedundantEscape" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpRedundantNestedCharacterClass" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpRepeatedSpace" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpSingleCharAlternation" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="RegExpUnexpectedAnchor" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="ReplaceArrayEqualityOpWithArraysEquals" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="SelfAssignment" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="SelfReferenceConstructorParameter" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="SetterBackingFieldAssignment" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="SuspiciousCollectionReassignment" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="SuspiciousEqualsCombination" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="SuspiciousVarProperty" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="UnusedLambdaExpressionBody" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="UnusedSymbol" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="UselessCallOnCollection" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="UselessCallOnNotNull" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="WrapUnaryOperator" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="LOCAL_VARIABLE" value="true" />
+      <option name="FIELD" value="true" />
+      <option name="METHOD" value="true" />
+      <option name="CLASS" value="true" />
+      <option name="PARAMETER" value="true" />
+      <option name="REPORT_PARAMETER_FOR_PUBLIC_METHODS" value="true" />
+      <option name="ADD_MAINS_TO_ENTRIES" value="true" />
+      <option name="ADD_APPLET_TO_ENTRIES" value="true" />
+      <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
+      <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
