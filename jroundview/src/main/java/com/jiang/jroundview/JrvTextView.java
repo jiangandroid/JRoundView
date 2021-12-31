@@ -7,6 +7,7 @@ import android.graphics.drawable.Drawable;
 import androidx.annotation.ColorInt;
 import androidx.appcompat.widget.AppCompatTextView;
 
+import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 
 /**
@@ -22,8 +23,8 @@ import android.util.AttributeSet;
  * 如需在 xml 中指定圆角、边框颜色、边框粗细、背景色等值,采用 xml 属性 {@link com.jiang.jroundview.R.styleable#JrvTextView}
  * </p>
  * <p>
- * 如需在 Java 中指定以上属性, 需要通过 {@link #getBackground()} 获取 {@link JRoundViewDrawable} 对象,
- * 然后使用 {@link JRoundViewDrawable} 提供的方法进行设置。
+ * 如需在 Java 中指定以上属性, 需要通过 {@link #getBackground()} 获取 {@link JrvDrawable} 对象,
+ * 然后使用 {@link JrvDrawable} 提供的方法进行设置。
  *
  * <h2>Usage</h2>
  * 在xml中使用:
@@ -48,10 +49,9 @@ import android.util.AttributeSet;
  * </p>
  * <p>
  *
- * @see JRoundViewDrawable
+ * @see JrvDrawable
  * </p>
  */
-
 public class JrvTextView extends AppCompatTextView implements JrvInterface<JrvTextView> {
 
     public JrvTextView(Context context) {
@@ -68,7 +68,7 @@ public class JrvTextView extends AppCompatTextView implements JrvInterface<JrvTe
     }
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
-        JRoundViewDrawable bg = JRoundViewDrawable.fromAttributeSet(context, attrs, defStyleAttr);
+        JrvDrawable bg = JrvDrawable.fromAttributeSet(context, attrs, defStyleAttr);
         JrvHelper.setBackgroundKeepingPadding(this, bg);
     }
 
@@ -80,9 +80,9 @@ public class JrvTextView extends AppCompatTextView implements JrvInterface<JrvTe
     @Override
     public JrvTextView setJrvBackgroundColor(@ColorInt int color) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
+        if (background instanceof JrvDrawable) {
             ColorStateList colorStateList = ColorStateList.valueOf(color);
-            ((JRoundViewDrawable) background).setBgData(colorStateList);
+            ((JrvDrawable) background).setBgData(colorStateList);
         }
         return this;
     }
@@ -97,9 +97,9 @@ public class JrvTextView extends AppCompatTextView implements JrvInterface<JrvTe
     @Override
     public JrvTextView setJrvBorderWidthColor(int width, @ColorInt int color) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
+        if (background instanceof JrvDrawable) {
             ColorStateList colorStateList = ColorStateList.valueOf(color);
-            ((JRoundViewDrawable) background).setStrokeData(width, colorStateList);
+            ((JrvDrawable) background).setStrokeData(width, colorStateList);
         }
         return this;
     }
@@ -112,8 +112,8 @@ public class JrvTextView extends AppCompatTextView implements JrvInterface<JrvTe
     @Override
     public JrvTextView setJrvIsRadiusAdjustBounds(boolean isRadiusAdjustBounds) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
-            ((JRoundViewDrawable) background).setIsRadiusAdjustBounds(isRadiusAdjustBounds);
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setIsRadiusAdjustBounds(isRadiusAdjustBounds);
         }
         return this;
     }
@@ -126,8 +126,8 @@ public class JrvTextView extends AppCompatTextView implements JrvInterface<JrvTe
     @Override
     public JrvTextView setJrvRadius(float radius) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
-            ((JRoundViewDrawable) background).setRadius(radius);
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setRadius(radius);
         }
         return this;
     }
@@ -144,8 +144,31 @@ public class JrvTextView extends AppCompatTextView implements JrvInterface<JrvTe
     @Override
     public JrvTextView setJrvRadius(float topLeftRadius, float topRightRadius, float bottomRightRadius, float bottomLeftRadius) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
-            ((JRoundViewDrawable) background).setRadius(topLeftRadius,topRightRadius,bottomLeftRadius,bottomRightRadius);
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setRadius(topLeftRadius, topRightRadius, bottomLeftRadius, bottomRightRadius);
+        }
+        return this;
+    }
+
+    /**
+     * 渐变色
+     */
+    @Override
+    public JrvTextView setGradient(@ColorInt int[] colors) {
+        if (colors != null && colors.length > 0) {
+            Drawable background = getBackground();
+            if (background instanceof JrvDrawable) {
+                ((JrvDrawable) background).setGradient(colors);
+            }
+        }
+        return this;
+    }
+
+    @Override
+    public JrvTextView setGradientOrientation(GradientDrawable.Orientation orientation) {
+        Drawable background = getBackground();
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setOrientation(orientation);
         }
         return this;
     }

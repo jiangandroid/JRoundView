@@ -49,31 +49,9 @@
     <inspection_tool class="AlibabaUseQuietReferenceNotation" enabled="false" level="MAJOR" enabled_by_default="false" />
     <inspection_tool class="AlibabaUseRightCaseForDateFormat" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="AndroidLintClickableViewAccessibility" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="CanSealedSubClassBeObject" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="ConflictingExtensionProperty" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="ControlFlowWithEmptyBody" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="ConvertNaNEquality" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="DataClassPrivateConstructor" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="DelegationToVarProperty" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="DestructuringWrongName" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="EmptyRange" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="ForEachParameterNotUsed" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="ImplicitNullableNothingType" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="KDocUnresolvedReference" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="KotlinCovariantEquals" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="KotlinEqualsBetweenInconvertibleTypes" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="KotlinThrowableNotThrown" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="LateinitVarOverridesLateinitVar" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="LeakingThis" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="MapOrSetKeyShouldOverrideHashCodeEquals" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="MemberVisibilityCanBePrivate" enabled="false" level="INFO" enabled_by_default="false" />
     <inspection_tool class="MethodRefCanBeReplacedWithLambda" enabled="false" level="INFORMATION" enabled_by_default="false" />
-    <inspection_tool class="MoveSuspiciousCallableReferenceIntoParentheses" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="NonAsciiCharacters" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="ObjectPropertyName" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="RecursiveEqualsCall" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="RecursivePropertyAccessor" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="Reformat" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="RegExpDuplicateAlternationBranch" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpDuplicateCharacterInClass" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpEmptyAlternationBranch" enabled="false" level="WARNING" enabled_by_default="false" />
@@ -84,18 +62,6 @@
     <inspection_tool class="RegExpRepeatedSpace" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpSingleCharAlternation" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="RegExpUnexpectedAnchor" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="ReplaceArrayEqualityOpWithArraysEquals" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="SelfAssignment" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="SelfReferenceConstructorParameter" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="SetterBackingFieldAssignment" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="SuspiciousCollectionReassignment" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="SuspiciousEqualsCombination" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="SuspiciousVarProperty" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="UnusedLambdaExpressionBody" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="UnusedSymbol" enabled="false" level="WARNING" enabled_by_default="false" />
-    <inspection_tool class="UselessCallOnCollection" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="UselessCallOnNotNull" enabled="true" level="ERROR" enabled_by_default="true" />
-    <inspection_tool class="WrapUnaryOperator" enabled="true" level="ERROR" enabled_by_default="true" />
     <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false">
       <option name="LOCAL_VARIABLE" value="true" />
       <option name="FIELD" value="true" />

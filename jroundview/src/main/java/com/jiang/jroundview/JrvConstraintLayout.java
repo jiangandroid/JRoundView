@@ -3,13 +3,14 @@ package com.jiang.jroundview;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 
 import androidx.annotation.ColorInt;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 /**
- * 见 {@link JrvTextView} 与 {@link JRoundViewDrawable}
+ * 见 {@link JrvTextView} 与 {@link JrvDrawable}
  */
 public class JrvConstraintLayout extends ConstraintLayout implements JrvInterface<JrvConstraintLayout> {
 
@@ -27,7 +28,7 @@ public class JrvConstraintLayout extends ConstraintLayout implements JrvInterfac
     }
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
-        JRoundViewDrawable bg = JRoundViewDrawable.fromAttributeSet(context, attrs, defStyleAttr);
+        JrvDrawable bg = JrvDrawable.fromAttributeSet(context, attrs, defStyleAttr);
         JrvHelper.setBackgroundKeepingPadding(this, bg);
     }
 
@@ -39,9 +40,9 @@ public class JrvConstraintLayout extends ConstraintLayout implements JrvInterfac
     @Override
     public JrvConstraintLayout setJrvBackgroundColor(@ColorInt int color) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
+        if (background instanceof JrvDrawable) {
             ColorStateList colorStateList = ColorStateList.valueOf(color);
-            ((JRoundViewDrawable) background).setBgData(colorStateList);
+            ((JrvDrawable) background).setBgData(colorStateList);
         }
         return this;
     }
@@ -56,9 +57,9 @@ public class JrvConstraintLayout extends ConstraintLayout implements JrvInterfac
     @Override
     public JrvConstraintLayout setJrvBorderWidthColor(int width, @ColorInt int color) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
+        if (background instanceof JrvDrawable) {
             ColorStateList colorStateList = ColorStateList.valueOf(color);
-            ((JRoundViewDrawable) background).setStrokeData(width, colorStateList);
+            ((JrvDrawable) background).setStrokeData(width, colorStateList);
         }
         return this;
     }
@@ -71,8 +72,8 @@ public class JrvConstraintLayout extends ConstraintLayout implements JrvInterfac
     @Override
     public JrvConstraintLayout setJrvIsRadiusAdjustBounds(boolean isRadiusAdjustBounds) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
-            ((JRoundViewDrawable) background).setIsRadiusAdjustBounds(isRadiusAdjustBounds);
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setIsRadiusAdjustBounds(isRadiusAdjustBounds);
         }
         return this;
     }
@@ -85,8 +86,8 @@ public class JrvConstraintLayout extends ConstraintLayout implements JrvInterfac
     @Override
     public JrvConstraintLayout setJrvRadius(float radius) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
-            ((JRoundViewDrawable) background).setRadius(radius);
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setRadius(radius);
         }
         return this;
     }
@@ -103,8 +104,31 @@ public class JrvConstraintLayout extends ConstraintLayout implements JrvInterfac
     @Override
     public JrvConstraintLayout setJrvRadius(float topLeftRadius, float topRightRadius, float bottomRightRadius, float bottomLeftRadius) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
-            ((JRoundViewDrawable) background).setRadius(topLeftRadius,topRightRadius,bottomLeftRadius,bottomRightRadius);
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setRadius(topLeftRadius, topRightRadius, bottomLeftRadius, bottomRightRadius);
+        }
+        return this;
+    }
+
+    /**
+     * 渐变色
+     */
+    @Override
+    public JrvConstraintLayout setGradient(@ColorInt int[] colors) {
+        if (colors != null && colors.length > 0) {
+            Drawable background = getBackground();
+            if (background instanceof JrvDrawable) {
+                ((JrvDrawable) background).setGradient(colors);
+            }
+        }
+        return this;
+    }
+
+    @Override
+    public JrvConstraintLayout setGradientOrientation(GradientDrawable.Orientation orientation) {
+        Drawable background = getBackground();
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setOrientation(orientation);
         }
         return this;
     }

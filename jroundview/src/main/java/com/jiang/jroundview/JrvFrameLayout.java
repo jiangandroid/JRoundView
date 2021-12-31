@@ -3,13 +3,14 @@ package com.jiang.jroundview;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
 import androidx.annotation.ColorInt;
 
 /**
- * 见 {@link JrvTextView} 与 {@link JRoundViewDrawable}
+ * 见 {@link JrvTextView} 与 {@link JrvDrawable}
  */
 public class JrvFrameLayout extends FrameLayout implements JrvInterface<JrvFrameLayout> {
 
@@ -28,7 +29,7 @@ public class JrvFrameLayout extends FrameLayout implements JrvInterface<JrvFrame
 
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
-        JRoundViewDrawable bg = JRoundViewDrawable.fromAttributeSet(context, attrs, defStyleAttr);
+        JrvDrawable bg = JrvDrawable.fromAttributeSet(context, attrs, defStyleAttr);
         JrvHelper.setBackgroundKeepingPadding(this, bg);
     }
 
@@ -40,9 +41,9 @@ public class JrvFrameLayout extends FrameLayout implements JrvInterface<JrvFrame
     @Override
     public JrvFrameLayout setJrvBackgroundColor(@ColorInt int color) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
+        if (background instanceof JrvDrawable) {
             ColorStateList colorStateList = ColorStateList.valueOf(color);
-            ((JRoundViewDrawable) background).setBgData(colorStateList);
+            ((JrvDrawable) background).setBgData(colorStateList);
         }
         return this;
     }
@@ -57,9 +58,9 @@ public class JrvFrameLayout extends FrameLayout implements JrvInterface<JrvFrame
     @Override
     public JrvFrameLayout setJrvBorderWidthColor(int width, @ColorInt int color) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
+        if (background instanceof JrvDrawable) {
             ColorStateList colorStateList = ColorStateList.valueOf(color);
-            ((JRoundViewDrawable) background).setStrokeData(width, colorStateList);
+            ((JrvDrawable) background).setStrokeData(width, colorStateList);
         }
         return this;
     }
@@ -72,8 +73,8 @@ public class JrvFrameLayout extends FrameLayout implements JrvInterface<JrvFrame
     @Override
     public JrvFrameLayout setJrvIsRadiusAdjustBounds(boolean isRadiusAdjustBounds) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
-            ((JRoundViewDrawable) background).setIsRadiusAdjustBounds(isRadiusAdjustBounds);
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setIsRadiusAdjustBounds(isRadiusAdjustBounds);
         }
         return this;
     }
@@ -86,8 +87,8 @@ public class JrvFrameLayout extends FrameLayout implements JrvInterface<JrvFrame
     @Override
     public JrvFrameLayout setJrvRadius(float radius) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
-            ((JRoundViewDrawable) background).setRadius(radius);
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setRadius(radius);
         }
         return this;
     }
@@ -104,8 +105,31 @@ public class JrvFrameLayout extends FrameLayout implements JrvInterface<JrvFrame
     @Override
     public JrvFrameLayout setJrvRadius(float topLeftRadius, float topRightRadius, float bottomRightRadius, float bottomLeftRadius) {
         Drawable background = getBackground();
-        if (background instanceof JRoundViewDrawable) {
-            ((JRoundViewDrawable) background).setRadius(topLeftRadius,topRightRadius,bottomLeftRadius,bottomRightRadius);
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setRadius(topLeftRadius, topRightRadius, bottomLeftRadius, bottomRightRadius);
+        }
+        return this;
+    }
+
+    /**
+     * 渐变色
+     */
+    @Override
+    public JrvFrameLayout setGradient(@ColorInt int[] colors) {
+        if (colors != null && colors.length > 0) {
+            Drawable background = getBackground();
+            if (background instanceof JrvDrawable) {
+                ((JrvDrawable) background).setGradient(colors);
+            }
+        }
+        return this;
+    }
+
+    @Override
+    public JrvFrameLayout setGradientOrientation(GradientDrawable.Orientation orientation) {
+        Drawable background = getBackground();
+        if (background instanceof JrvDrawable) {
+            ((JrvDrawable) background).setOrientation(orientation);
         }
         return this;
     }

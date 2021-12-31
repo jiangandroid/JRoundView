@@ -7,26 +7,27 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.jiang.jroundview.JrvLinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="12dp"
-        android:orientation="vertical"
-        app:jrv_backgroundColor="#00ff00"
-        app:jrv_borderColor="#FF0000"
-        app:jrv_borderWidth="2dp">
+        android:orientation="vertical">
 
         <com.jiang.jroundview.JrvTextView
+            android:id="@+id/vJrvTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="50dp"
             android:padding="20dp"
             android:text="JrvTextView"
             android:textColor="@color/white"
             android:textSize="24dp"
-            app:jrv_backgroundColor="#000000"
+            app:jrv_backgroundColor="#00ff00"
             app:jrv_borderColor="@color/white"
             app:jrv_borderWidth="3dp"
-            app:jrv_isRadiusAdjustBounds="true" />
+            app:jrv_isRadiusAdjustBounds="true"
+            app:jrv_radius="20dp"
+            app:jrv_gradientOrientation="RIGHT_LEFT" />
 
-    </com.jiang.jroundview.JrvLinearLayout>
+    </LinearLayout>
 </LinearLayout>

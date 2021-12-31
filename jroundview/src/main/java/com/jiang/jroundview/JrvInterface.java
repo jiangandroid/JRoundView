@@ -1,5 +1,7 @@
 package com.jiang.jroundview;
 
+import android.graphics.drawable.GradientDrawable;
+
 import androidx.annotation.ColorInt;
 
 /**
@@ -49,4 +51,16 @@ interface JrvInterface<T> {
      * @param bottomLeftRadius  左下方
      */
     T setJrvRadius(float topLeftRadius, float topRightRadius, float bottomRightRadius, float bottomLeftRadius);
+
+    /**
+     * 渐变背景色
+     *
+     * @param colors 颜色
+     */
+    T setGradient(@ColorInt int[] colors);
+
+    /**
+     * 设置渐变色方向
+     */
+    T setGradientOrientation(GradientDrawable.Orientation orientation);
 }
